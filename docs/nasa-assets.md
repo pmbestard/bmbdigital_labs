@@ -22,6 +22,12 @@ La web usa imagenes descargadas desde NASA Image and Video Library para una prue
    - Centro: NASA/JPL
    - Fuente: `https://images-assets.nasa.gov/image/PIA00782/collection.json`
 
+4. `public/nasa/earth-himalayas-flyover.jpg`
+   - Titulo NASA: The snow-capped Himalayas separate Nepal from China
+   - NASA ID: `iss074e0603570`
+   - Centro: NASA Johnson Space Center
+   - Fuente: `https://images-assets.nasa.gov/image/iss074e0603570/collection.json`
+
 ## Uso
 
 NASA indica en sus guias de uso de imagenes y medios que el contenido de NASA generalmente no esta sujeto a copyright en Estados Unidos y puede usarse en sitios web, siempre que no implique patrocinio, aprobacion o respaldo de NASA.

@@ -12,6 +12,9 @@
   --signal-soft: #fff0e6;
   --shadow: 0 24px 70px rgba(23, 26, 31, 0.14);
   --earth-opacity: 0.22;
+  --surface-opacity: 0.18;
+  --surface-y: 0px;
+  --surface-scale: 1.08;
   --mars-opacity: 0;
   --travel: 0;
 }
@@ -85,6 +88,26 @@ a {
   filter: saturate(1.05) contrast(1.08);
   mix-blend-mode: screen;
   pointer-events: none;
+}
+
+.cosmic-surface {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  width: 122vw;
+  height: 122vh;
+  object-fit: cover;
+  opacity: var(--surface-opacity);
+  filter: grayscale(0.18) saturate(0.72) contrast(1.05) brightness(0.72);
+  mix-blend-mode: screen;
+  pointer-events: none;
+  transform:
+    translate3d(-50%, calc(-50% + var(--surface-y)), 0)
+    rotate(-8deg)
+    scale(var(--surface-scale));
+  transform-origin: center;
+  mask-image:
+    radial-gradient(ellipse at center, rgba(0, 0, 0, 0.88), rgba(0, 0, 0, 0.32) 58%, transparent 86%);
 }
 
 .cosmic-earth {
@@ -1081,6 +1104,11 @@ section {
   .cosmic-earth,
   .cosmic-mars {
     width: 78vw;
+  }
+
+  .cosmic-surface {
+    width: 150vw;
+    height: 118vh;
   }
 }
 

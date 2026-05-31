@@ -39,9 +39,15 @@
     var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     var progress = clamp(window.scrollY / scrollMax, 0, 1);
     var earthOpacity = clamp(0.28 - progress * 0.45, 0.02, 0.28);
+    var surfaceOpacity = clamp(0.2 - Math.abs(progress - 0.34) * 0.22, 0.08, 0.2);
+    var surfaceY = -160 + progress * 420;
+    var surfaceScale = 1.14 - progress * 0.12;
     var marsOpacity = clamp((progress - 0.18) * 0.62, 0, 0.34);
     document.documentElement.style.setProperty("--travel", progress.toFixed(4));
     document.documentElement.style.setProperty("--earth-opacity", earthOpacity.toFixed(4));
+    document.documentElement.style.setProperty("--surface-opacity", surfaceOpacity.toFixed(4));
+    document.documentElement.style.setProperty("--surface-y", surfaceY.toFixed(1) + "px");
+    document.documentElement.style.setProperty("--surface-scale", surfaceScale.toFixed(4));
     document.documentElement.style.setProperty("--mars-opacity", marsOpacity.toFixed(4));
   }
 

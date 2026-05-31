@@ -78,6 +78,15 @@ a {
   opacity: 0.5;
 }
 
+.network-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0.58;
+  mix-blend-mode: screen;
+}
+
 .cosmic-earth,
 .cosmic-mars {
   position: absolute;

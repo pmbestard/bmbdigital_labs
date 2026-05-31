@@ -98,8 +98,8 @@ a {
   height: 122vh;
   object-fit: cover;
   opacity: var(--surface-opacity);
-  filter: grayscale(0.04) saturate(0.92) contrast(1.16) brightness(1.02);
-  mix-blend-mode: overlay;
+  filter: grayscale(0.02) saturate(1) contrast(1.24) brightness(1.08);
+  mix-blend-mode: soft-light;
   pointer-events: none;
   transform:
     translate3d(-50%, calc(-50% + var(--surface-y)), 0)
@@ -578,12 +578,24 @@ section {
   margin-bottom: 30px;
 }
 
-.intro-band,
-.billing-section {
+.intro-band {
   background:
     linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(243, 244, 243, 0.16)),
     rgba(255, 255, 255, 0.02);
   backdrop-filter: blur(4px) saturate(1.02);
+}
+
+.billing-section {
+  color: #f7f7f4;
+  background:
+    radial-gradient(circle at 78% 38%, rgba(255, 106, 0, 0.12), transparent 28%),
+    linear-gradient(180deg, rgba(21, 24, 29, 0.62), rgba(21, 24, 29, 0.5)),
+    rgba(21, 24, 29, 0.2);
+  backdrop-filter: blur(4px) saturate(1.05);
+}
+
+.billing-section .section-heading p:not(.eyebrow) {
+  color: #d8dddf;
 }
 
 .principle-grid,
@@ -738,9 +750,9 @@ section {
   color: #f7f7f4;
   background:
     radial-gradient(circle at 78% 10%, rgba(255, 106, 0, 0.14), transparent 26%),
-    linear-gradient(180deg, rgba(21, 24, 29, 0.34), rgba(21, 24, 29, 0.24)),
-    rgba(21, 24, 29, 0.08);
-  backdrop-filter: blur(3px) saturate(1.04);
+    linear-gradient(180deg, rgba(21, 24, 29, 0.24), rgba(21, 24, 29, 0.16)),
+    rgba(21, 24, 29, 0.04);
+  backdrop-filter: blur(2px) saturate(1.06);
 }
 
 .platform-section .section-heading p:not(.eyebrow),
@@ -751,18 +763,30 @@ section {
 .platform-section .platform-grid article {
   border-color: rgba(255, 106, 0, 0.22);
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.1), rgba(255, 255, 255, 0.04)),
-    rgba(21, 24, 29, 0.34);
-  box-shadow: 0 18px 50px rgba(0, 0, 0, 0.2);
+    linear-gradient(135deg, rgba(21, 24, 29, 0.42), rgba(21, 24, 29, 0.24)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.22),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(7px) saturate(1.1);
+}
+
+.platform-section .section-heading {
+  width: fit-content;
+  max-width: 100%;
+  padding: 18px 22px;
+  border-left: 3px solid var(--signal);
+  background: linear-gradient(90deg, rgba(21, 24, 29, 0.46), rgba(21, 24, 29, 0.08));
+  backdrop-filter: blur(6px);
 }
 
 .integrity-section {
   color: #f7f7f4;
   background:
     radial-gradient(circle at 88% 18%, rgba(255, 106, 0, 0.18), transparent 28%),
-    linear-gradient(180deg, rgba(21, 24, 29, 0.58), rgba(21, 24, 29, 0.48)),
-    rgba(21, 24, 29, 0.24);
-  backdrop-filter: blur(4px) saturate(1.04);
+    linear-gradient(180deg, rgba(21, 24, 29, 0.48), rgba(21, 24, 29, 0.38)),
+    rgba(21, 24, 29, 0.16);
+  backdrop-filter: blur(3px) saturate(1.05);
 }
 
 .integrity-section .section-heading p:not(.eyebrow) {
@@ -1039,15 +1063,15 @@ section {
   border: 1px solid var(--line);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0.22)),
-    rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(10px);
+    linear-gradient(135deg, rgba(21, 24, 29, 0.48), rgba(21, 24, 29, 0.28)),
+    rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(8px) saturate(1.08);
 }
 
 .calculator label {
   display: grid;
   gap: 8px;
-  color: #3a4659;
+  color: #d8dddf;
   font-size: 13px;
   font-weight: 900;
 }
@@ -1056,12 +1080,12 @@ section {
   width: 100%;
   min-height: 44px;
   padding: 0 12px;
-  border: 1px solid #cbd6e6;
+  border: 1px solid rgba(215, 220, 226, 0.34);
   border-radius: 8px;
-  color: var(--ink);
+  color: #f7f7f4;
   font: inherit;
   font-weight: 850;
-  background: #ffffff;
+  background: rgba(255, 255, 255, 0.08);
 }
 
 .calculator input:focus {
@@ -1092,6 +1116,20 @@ section {
   color: var(--signal);
   font-size: 30px;
   line-height: 1;
+}
+
+.billing-section .metrics article {
+  border-color: rgba(255, 106, 0, 0.28);
+  background:
+    linear-gradient(135deg, rgba(21, 24, 29, 0.54), rgba(21, 24, 29, 0.32)),
+    rgba(255, 255, 255, 0.04);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+}
+
+.billing-section .metrics span {
+  color: #aeb4b8;
 }
 
 .integrity-list {

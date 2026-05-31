@@ -39,7 +39,7 @@
     var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
     var progress = clamp(window.scrollY / scrollMax, 0, 1);
     var earthOpacity = clamp(0.28 - progress * 0.45, 0.02, 0.28);
-    var surfaceOpacity = clamp(0.3 - Math.abs(progress - 0.34) * 0.26, 0.12, 0.3);
+    var surfaceOpacity = clamp(0.48 - Math.abs(progress - 0.34) * 0.28, 0.22, 0.48);
     var surfaceY = -160 + progress * 420;
     var surfaceScale = 1.14 - progress * 0.12;
     var marsOpacity = clamp((progress - 0.18) * 0.62, 0, 0.34);

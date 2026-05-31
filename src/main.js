@@ -486,9 +486,45 @@
     };
   }
 
+  function initContactMask() {
+    var form = document.querySelector(".contact-form");
+    if (!form) return;
+
+    function readMailPart(value) {
+      if (form.dataset.mailEncoding === "b64" && window.atob) {
+        return window.atob(value || "");
+      }
+      return value || "";
+    }
+
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
+      if (!form.reportValidity()) return;
+
+      var data = new FormData(form);
+      var target = readMailPart(form.dataset.mailUser) + "@" + readMailPart(form.dataset.mailHost);
+      var subject = "Consulta BMB Digital Labs - " + (data.get("tipo-proyecto") || "Proyecto");
+      var body = [
+        "Nombre: " + (data.get("nombre") || ""),
+        "Email: " + (data.get("email") || ""),
+        "Tipo de proyecto: " + (data.get("tipo-proyecto") || ""),
+        "",
+        "Mensaje:",
+        data.get("mensaje") || "",
+        "",
+        "Privacidad: consentimiento marcado para responder a esta consulta."
+      ].join("\n");
+
+      window.location.href = "mailto:" + target
+        + "?subject=" + encodeURIComponent(subject)
+        + "&body=" + encodeURIComponent(body);
+    });
+  }
+
   updateJourney();
   var cleanupNetwork = initMagneticNetwork();
   var cleanupBrandOrb = initBrandOrb();
+  initContactMask();
   window.addEventListener("scroll", updateJourney, { passive: true });
   window.addEventListener("resize", updateJourney);
   window.addEventListener("pagehide", function () {

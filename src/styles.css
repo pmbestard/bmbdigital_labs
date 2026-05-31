@@ -1462,6 +1462,13 @@ section {
   accent-color: var(--signal);
 }
 
+.contact-mask {
+  margin: -2px 0 0;
+  color: #aeb4b8;
+  font-size: 12px;
+  line-height: 1.45;
+}
+
 .contact-note {
   padding: 26px;
 }

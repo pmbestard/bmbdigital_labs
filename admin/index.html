@@ -1,0 +1,140 @@
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex, nofollow, noarchive" />
+    <title>Admin privado | BMB Digital Labs</title>
+    <link rel="stylesheet" href="./admin.css" />
+  </head>
+  <body>
+    <main class="admin-shell">
+      <section class="login-panel" id="login-panel">
+        <div class="brand-lock">
+          <img src="../public/brand/bmb-logo-seal.png" alt="" />
+          <div>
+            <span>BMB Digital Labs</span>
+            <strong>Oficina soberana</strong>
+          </div>
+        </div>
+        <p class="eyebrow">Acceso administrador</p>
+        <h1>Bóveda cifrada local para documentos y servicios.</h1>
+        <p>
+          La web solo carga la herramienta. Los datos viajan contigo en un archivo <code>.bmbvault</code>, por ejemplo en un USB, y se descifran en este navegador con tu frase de paso.
+        </p>
+
+        <form class="unlock-form" id="unlock-form">
+          <label>
+            Archivo de bóveda
+            <input id="vault-file" type="file" accept=".bmbvault,application/json" />
+          </label>
+          <label>
+            Frase de paso
+            <input id="passphrase" type="password" autocomplete="current-password" minlength="12" required />
+          </label>
+          <div class="actions">
+            <button type="button" id="open-vault">Abrir bóveda</button>
+            <button type="button" class="ghost" id="new-vault">Crear bóveda nueva</button>
+          </div>
+        </form>
+
+        <div class="security-grid">
+          <article>
+            <span>Sin servidor</span>
+            <p>Los datos no se envían a BMB, GitHub ni Arsys.</p>
+          </article>
+          <article>
+            <span>Cifrado</span>
+            <p>AES-GCM con clave derivada por PBKDF2 en tu navegador.</p>
+          </article>
+          <article>
+            <span>USB</span>
+            <p>Exporta la bóveda y guárdala fuera de la web pública.</p>
+          </article>
+        </div>
+        <p class="status" id="login-status" role="status"></p>
+      </section>
+
+      <section class="workspace" id="workspace" hidden>
+        <header class="workspace-header">
+          <a class="brand-lock" href="../" aria-label="Volver a BMB Digital Labs">
+            <img src="../public/brand/bmb-logo-seal.png" alt="" />
+            <div>
+              <span>BMB Digital Labs</span>
+              <strong>Administrador privado</strong>
+            </div>
+          </a>
+          <div class="workspace-actions">
+            <button id="export-vault" type="button">Guardar bóveda</button>
+            <button id="mail-backup" class="ghost" type="button">Respaldar por email</button>
+            <button id="lock-vault" class="ghost" type="button">Bloquear</button>
+          </div>
+        </header>
+
+        <section class="mission-card">
+          <p class="eyebrow">Sistema soberano</p>
+          <h2>Lo que vendemos debe funcionar primero para nosotros.</h2>
+          <p>
+            Aquí practicamos nuestro propio modelo: catálogo de servicios, borradores, propuestas, trazabilidad y papel corporativo, sin exponer datos sensibles en la web pública.
+          </p>
+          <p class="mail-note">
+            Puedes guardar una copia cifrada en USB y enviarla manualmente por correo como adjunto. El correo solo debe transportar la bóveda cifrada, nunca documentos en claro ni la frase de paso.
+          </p>
+          <label class="backup-mail">
+            Correo de respaldo opcional
+            <input id="backup-email" type="email" placeholder="tu-correo@dominio.com" autocomplete="email" />
+          </label>
+          <dl>
+            <div><dt>Estado</dt><dd id="vault-state">Abierta</dd></div>
+            <div><dt>Actualización</dt><dd id="vault-updated">-</dd></div>
+            <div><dt>Registros</dt><dd id="vault-count">0</dd></div>
+          </dl>
+        </section>
+
+        <section class="admin-grid">
+          <article class="panel">
+            <p class="eyebrow">Catálogo interno</p>
+            <h3>Servicios y ofertas</h3>
+            <form id="service-form">
+              <label>Servicio <input id="service-name" type="text" required /></label>
+              <label>
+                Estado
+                <select id="service-status">
+                  <option>Idea</option>
+                  <option>Validación</option>
+                  <option>Listo para presentar</option>
+                  <option>Servicio activo</option>
+                </select>
+              </label>
+              <label>Descripción <textarea id="service-description" rows="4" required></textarea></label>
+              <button type="submit">Añadir servicio</button>
+            </form>
+            <div class="list" id="service-list"></div>
+          </article>
+
+          <article class="panel">
+            <p class="eyebrow">Documentos</p>
+            <h3>Borradores con membrete</h3>
+            <form id="document-form">
+              <label>Título <input id="document-title" type="text" required /></label>
+              <label>
+                Tipo
+                <select id="document-type">
+                  <option>Carta formal</option>
+                  <option>Presupuesto</option>
+                  <option>Nota legal</option>
+                  <option>Propuesta</option>
+                </select>
+              </label>
+              <label>Contenido <textarea id="document-body" rows="7" required></textarea></label>
+              <button type="submit">Añadir documento</button>
+            </form>
+            <div class="list" id="document-list"></div>
+          </article>
+        </section>
+      </section>
+    </main>
+
+    <script src="./admin.js"></script>
+  </body>
+</html>

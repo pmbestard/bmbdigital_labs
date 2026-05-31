@@ -1,5 +1,15 @@
+@font-face {
+  font-family: "BMB Mission";
+  src: url("../public/fonts/Nasalization-Rg.otf") format("opentype");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
 :root {
   color-scheme: light;
+  --font-body: Inter, "Segoe UI", Arial, sans-serif;
+  --font-mission: "BMB Mission", Inter, "Segoe UI", Arial, sans-serif;
   --ink: #171a1f;
   --muted: #66707c;
   --line: #d7dce2;
@@ -30,7 +40,7 @@ html {
 body {
   margin: 0;
   color: var(--ink);
-  font-family: Inter, "Segoe UI", Arial, sans-serif;
+  font-family: var(--font-body);
   background:
     linear-gradient(90deg, rgba(21, 24, 29, 0.035) 1px, transparent 1px),
     linear-gradient(0deg, rgba(21, 24, 29, 0.035) 1px, transparent 1px),
@@ -174,6 +184,7 @@ a {
   align-items: center;
   gap: 10px;
   min-width: 0;
+  font-family: var(--font-mission);
   font-weight: 900;
 }
 
@@ -205,6 +216,7 @@ a {
   justify-content: flex-end;
   gap: 8px 18px;
   color: #d8dddf;
+  font-family: var(--font-mission);
   font-size: 14px;
   font-weight: 800;
 }
@@ -265,6 +277,7 @@ a {
 .eyebrow {
   margin: 0 0 12px;
   color: var(--signal);
+  font-family: var(--font-mission);
   font-size: 12px;
   font-weight: 950;
   letter-spacing: 0.12em;
@@ -281,8 +294,8 @@ p {
 h1 {
   max-width: 760px;
   margin-bottom: 20px;
-  font-size: 56px;
-  line-height: 1.02;
+  font-size: 50px;
+  line-height: 1.05;
 }
 
 h2 {
@@ -388,6 +401,7 @@ h3 {
   border: 1px solid rgba(255, 106, 0, 0.34);
   border-radius: 6px;
   color: #f5f5f1;
+  font-family: var(--font-mission);
   font-size: 11px;
   font-weight: 950;
   letter-spacing: 0.08em;
@@ -411,6 +425,7 @@ h3 {
 
 .mission-panel > span {
   color: var(--signal);
+  font-family: var(--font-mission);
   font-size: 11px;
   font-weight: 950;
   letter-spacing: 0.12em;
@@ -419,6 +434,7 @@ h3 {
 .mission-panel > strong {
   display: block;
   margin: 8px 0 14px;
+  font-family: var(--font-mission);
   font-size: 38px;
   line-height: 1;
 }
@@ -440,6 +456,7 @@ h3 {
 .mission-panel dt,
 .mission-panel dd {
   margin: 0;
+  font-family: var(--font-mission);
   font-size: 12px;
 }
 
@@ -534,9 +551,9 @@ h3 {
   padding: 0 18px;
   border: 0;
   border-radius: 999px;
+  font-family: var(--font-mission);
   font-size: 14px;
   font-weight: 900;
-  font-family: inherit;
   cursor: pointer;
 }
 
@@ -1244,6 +1261,7 @@ section {
   padding: 0 10px;
   border-radius: 999px;
   color: #ffffff;
+  font-family: var(--font-mission);
   font-size: 12px;
   font-weight: 950;
   background: var(--signal);
@@ -1279,6 +1297,7 @@ section {
   display: inline-flex;
   margin-bottom: 18px;
   color: var(--signal);
+  font-family: var(--font-mission);
   font-size: 12px;
   font-weight: 950;
   letter-spacing: 0.1em;
@@ -1308,6 +1327,7 @@ section {
 .service-grid span {
   display: block;
   color: var(--signal);
+  font-family: var(--font-mission);
   font-size: 12px;
   font-weight: 900;
   letter-spacing: 0.08em;
@@ -1536,7 +1556,7 @@ section {
   }
 
   h1 {
-    font-size: 42px;
+    font-size: 38px;
   }
 
   h2 {
@@ -1635,7 +1655,7 @@ section {
   }
 
   h1 {
-    font-size: 34px;
+    font-size: 31px;
   }
 
   h2 {

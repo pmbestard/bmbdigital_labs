@@ -8,3 +8,4 @@ screenshots/
 .tmp-edge*/
 private-office/
 *.bmbvault
+public/brand/*.original-typo.png

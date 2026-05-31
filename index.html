@@ -22,8 +22,7 @@
     <header class="site-header" aria-label="Navegacion principal">
       <a class="brand-link" href="#inicio" aria-label="BMB Digital Labs">
         <span class="brand-mark" aria-hidden="true">
-          <i></i>
-          <span>BMB</span>
+          <img src="./public/brand/bmb-logo-seal.png" alt="" />
         </span>
         <span>BMB Digital Labs</span>
       </a>
@@ -33,6 +32,7 @@
         <a href="#proyectos">Proyectos</a>
         <a href="#creadores">Creadores</a>
         <a href="#empresa">Empresa</a>
+        <a href="#contacto">Contacto</a>
       </nav>
     </header>
 
@@ -43,6 +43,7 @@
         <div class="mission-grid" aria-hidden="true"></div>
         <div class="hero-content">
           <div class="hero-brand" aria-hidden="true">
+            <canvas class="brand-orb-canvas"></canvas>
             <img src="./public/brand/bmb-logo-horizontal.png" alt="" />
           </div>
           <h1 id="hero-title">Diseñamos sistemas digitales listos para operar.</h1>
@@ -56,7 +57,7 @@
           </div>
           <div class="hero-actions" aria-label="Acciones principales">
             <a class="primary-action" href="#proyectos">Abrir cartera</a>
-            <a class="secondary-action" href="#empresa">Preparar alta</a>
+            <a class="secondary-action" href="#contacto">Contactar</a>
           </div>
         </div>
         <aside class="mission-panel" aria-label="Estado de la mision">
@@ -133,7 +134,13 @@
             BMB Digital Labs une oficio tecnico, diseño web, producto digital, automatizacion y sensibilidad visual para construir sistemas que no parezcan improvisados.
           </p>
           <p>
-            La identidad legal del fundador queda reservada para contratos, alta fiscal y documentacion oficial. De cara al mercado, la protagonista es la marca: una empresa capaz de crear, ordenar y lanzar negocios digitales con consistencia.
+            Desde 1990, una trayectoria profesional ligada al trabajo practico, la logistica, la administracion, el trato comercial y la evolucion digital ha terminado tomando forma en esta marca: una empresa capaz de crear, ordenar y lanzar negocios digitales con consistencia.
+          </p>
+          <p>
+            La inteligencia artificial se integra como una extension del proceso creativo y tecnico: visualizo la idea, defino el criterio, diseño la direccion y uso la tecnologia para convertirlo en prototipos, interfaces, documentos y sistemas operativos.
+          </p>
+          <p>
+            La identidad legal del fundador queda reservada para contratos, alta fiscal y documentacion oficial. De cara al mercado, la protagonista es BMB Digital Labs y la calidad del trabajo que presenta.
           </p>
           <div class="founder-links">
             <a href="#empresa">Guion para presentar el negocio</a>
@@ -148,12 +155,24 @@
               <dd>Formacion en electronica y electricidad, mentalidad practica y capacidad de convertir necesidades en sistemas.</dd>
             </div>
             <div>
+              <dt>Evolucion profesional</dt>
+              <dd>Trayectoria iniciada en 1990 y orientada progresivamente hacia producto, diseño, operacion y negocio digital.</dd>
+            </div>
+            <div>
               <dt>Experiencia aplicada</dt>
-              <dd>Diseño web, interfaces, marca visual, documentos profesionales, automatizacion y producto digital.</dd>
+              <dd>Diseño web, interfaces, marca visual, documentos profesionales, automatizacion, producto digital y experiencia comercial.</dd>
+            </div>
+            <div>
+              <dt>Negocio desde cero</dt>
+              <dd>Logistica, conocimiento de producto, lectura de demanda, promocion, administracion y ventas desde el terreno.</dd>
             </div>
             <div>
               <dt>Rol publico</dt>
               <dd>Diseñador CEO y creador de plataformas digitales propias bajo la marca BMB Digital Labs.</dd>
+            </div>
+            <div>
+              <dt>Proceso aumentado</dt>
+              <dd>Vision humana, criterio de diseño y herramientas de IA trabajando como extension del desarrollo.</dd>
             </div>
           </dl>
           <p class="cv-note">El nombre legal completo solo debe figurar en documentos oficiales, contratos y tramites administrativos.</p>
@@ -161,6 +180,9 @@
       </section>
 
       <section class="platform-section" id="proyectos">
+        <div class="ecosystem-orb" aria-hidden="true">
+          <span></span><span></span><span></span>
+        </div>
         <div class="section-heading">
           <p class="eyebrow">Cartera inicial</p>
           <h2>Proyectos propios con arquitectura comun.</h2>
@@ -250,47 +272,37 @@
 
       <section class="billing-section" id="empresa">
         <div class="section-heading">
-          <p class="eyebrow">Modelo de negocio</p>
-          <h2>Producto, servicio y cobro bajo el mismo tablero.</h2>
+          <p class="eyebrow">Empresa raiz</p>
+          <h2>Presentamos proyectos propios y abrimos servicio a medida.</h2>
           <p>
-            El alta inicial como autonomo puede cubrir desarrollo web, diseño digital, mantenimiento, productos online y futuras suscripciones. La forma societaria se valorara cuando el volumen, el riesgo o la inversion lo pidan.
+            BMB Digital Labs nace como laboratorio para crear plataformas propias, enseñar trabajo real y construir presencia digital con criterio. Primero presentamos lo que sabemos hacer; despues, si hay encaje, desarrollamos soluciones personalizadas para clientes.
           </p>
         </div>
-        <div class="billing-layout">
-          <form class="calculator" id="revenue-calculator">
-            <label>
-              Clientes o usuarios de pago
-              <input id="users" type="number" min="0" value="50" />
-            </label>
-            <label>
-              Ingreso medio mensual sin IVA
-              <input id="price" type="number" min="0" step="0.01" value="29.00" />
-            </label>
-            <label>
-              IVA estimado
-              <input id="vat" type="number" min="0" step="0.01" value="21" />
-            </label>
-            <label>
-              Coste operativo / pasarela
-              <input id="fee" type="number" min="0" step="0.01" value="3" />
-            </label>
-          </form>
-          <div class="metrics" aria-live="polite">
+        <div class="service-layout">
+          <article class="service-panel">
+            <span>Enfoque</span>
+            <h3>Sin tarifa generica, con diagnostico real.</h3>
+            <p>
+              Cada proyecto se valora por alcance, riesgo, mantenimiento, datos, integraciones y nivel de acabado. La web no vende una tabla de precios: enseña una forma de trabajar.
+            </p>
+            <blockquote>Un cliente satisfecho es nuestro mejor comercial.</blockquote>
+          </article>
+          <div class="service-grid">
             <article>
-              <span>Base mensual</span>
-              <strong id="base-revenue">0,00 €</strong>
+              <span>Productos propios</span>
+              <p>Plataformas que nacen desde una necesidad concreta y se prueban con usuarios reales.</p>
             </article>
             <article>
-              <span>IVA repercutido</span>
-              <strong id="vat-output">0,00 €</strong>
+              <span>Servicio personalizado</span>
+              <p>Diseño web, marca, documentos, automatizacion y herramientas a medida cuando el encaje es bueno.</p>
             </article>
             <article>
-              <span>Costes estimados</span>
-              <strong id="fee-output">0,00 €</strong>
+              <span>Operacion</span>
+              <p>Procesos, cobros, fiscalidad, datos, logistica y trazabilidad pensados antes de crecer.</p>
             </article>
             <article>
-              <span>Ingreso antes de impuestos</span>
-              <strong id="net-output">0,00 €</strong>
+              <span>Marca</span>
+              <p>Interfaces, tono visual y documentos con una imagen seria, limpia y defendible.</p>
             </article>
           </div>
         </div>
@@ -316,12 +328,98 @@
           </article>
         </div>
       </section>
+
+      <section class="contact-section" id="contacto">
+        <div class="section-heading">
+          <p class="eyebrow">Contacto</p>
+          <h2>Cuéntanos qué quieres construir.</h2>
+          <p>
+            Este formulario prepara un correo para iniciar una conversación. No hay contratación automática ni precios cerrados: primero escuchamos, ordenamos alcance y valoramos si podemos aportar de verdad.
+          </p>
+        </div>
+        <div class="contact-layout">
+          <form class="contact-form" action="mailto:contacto@bmbdigitallabs.com" method="post" enctype="text/plain">
+            <label>
+              Nombre
+              <input name="nombre" type="text" autocomplete="name" required />
+            </label>
+            <label>
+              Email
+              <input name="email" type="email" autocomplete="email" required />
+            </label>
+            <label>
+              Tipo de proyecto
+              <select name="tipo-proyecto" required>
+                <option value="">Selecciona una opción</option>
+                <option>Web profesional</option>
+                <option>Marca o presencia digital</option>
+                <option>Plataforma o herramienta a medida</option>
+                <option>Proyecto propio / colaboración</option>
+              </select>
+            </label>
+            <label>
+              Mensaje
+              <textarea name="mensaje" rows="5" required placeholder="Cuéntanos objetivo, contexto, plazos aproximados y qué resultado necesitas."></textarea>
+            </label>
+            <label class="privacy-check">
+              <input name="privacidad" type="checkbox" required />
+              <span>He leído la información básica de privacidad y acepto que BMB Digital Labs use estos datos solo para responder a mi consulta.</span>
+            </label>
+            <button class="primary-action" type="submit">Enviar consulta</button>
+          </form>
+          <aside class="contact-note">
+            <span>Principio de servicio</span>
+            <p>
+              Buscamos proyectos que podamos defender con orgullo. Si el trabajo queda claro, cuidado y útil, el cliente se convierte en la mejor prueba de marca.
+            </p>
+            <ul>
+              <li>Respuesta orientativa por correo.</li>
+              <li>Sin alta automática ni newsletter.</li>
+              <li>Sin cesión comercial de datos.</li>
+            </ul>
+          </aside>
+        </div>
+      </section>
+
+      <section class="legal-section" id="legal">
+        <div class="section-heading">
+          <p class="eyebrow">Legal</p>
+          <h2>Derechos reservados, privacidad y uso del sitio.</h2>
+        </div>
+        <div class="legal-grid">
+          <article>
+            <h3>Aviso legal</h3>
+            <p>BMB Digital Labs es una marca/proyecto digital en fase de presentación. Los datos fiscales completos del titular se incorporarán antes de iniciar contratación formal, facturación o prestación continuada de servicios.</p>
+            <p>Contacto operativo: <a href="mailto:contacto@bmbdigitallabs.com">contacto@bmbdigitallabs.com</a>.</p>
+          </article>
+          <article>
+            <h3>Propiedad intelectual</h3>
+            <p>Salvo indicación expresa, diseño, textos, estructura visual, logotipos, composiciones y recursos propios de BMB Digital Labs quedan protegidos. Queda prohibida su reproducción, transformación o uso comercial sin autorización previa.</p>
+          </article>
+          <article>
+            <h3>Privacidad</h3>
+            <p>Los datos enviados mediante el formulario se usarán exclusivamente para responder a la consulta. La base de tratamiento es el consentimiento del usuario. No se ceden datos a terceros salvo obligación legal.</p>
+            <p>El usuario puede solicitar acceso, rectificación o supresión escribiendo al correo de contacto.</p>
+          </article>
+          <article>
+            <h3>Cookies y créditos</h3>
+            <p>Esta versión no instala cookies analíticas ni publicitarias propias. Las imágenes espaciales se acreditan a NASA / GSFC / JPL. El uso de material NASA no implica patrocinio ni aprobación.</p>
+          </article>
+        </div>
+      </section>
     </main>
 
     <footer class="site-footer">
-      <span>BMB Digital Labs</span>
+      <div>
+        <span>BMB Digital Labs</span>
+        <small>© 2026 BMB Digital Labs. Todos los derechos reservados.</small>
+      </div>
       <small>Imagery: NASA / GSFC / JPL. No endorsement implied.</small>
-      <a href="#inicio">Volver arriba</a>
+      <nav aria-label="Enlaces legales">
+        <a href="#contacto">Contacto</a>
+        <a href="#legal">Legal</a>
+        <a href="#inicio">Volver arriba</a>
+      </nav>
     </footer>
 
     <script src="./src/main.js"></script>

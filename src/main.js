@@ -31,9 +31,26 @@
     setText("net-output", net);
   }
 
+  function clamp(value, min, max) {
+    return Math.min(max, Math.max(min, value));
+  }
+
+  function updateJourney() {
+    var scrollMax = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+    var progress = clamp(window.scrollY / scrollMax, 0, 1);
+    var earthOpacity = clamp(0.28 - progress * 0.45, 0.02, 0.28);
+    var marsOpacity = clamp((progress - 0.18) * 0.62, 0, 0.34);
+    document.documentElement.style.setProperty("--travel", progress.toFixed(4));
+    document.documentElement.style.setProperty("--earth-opacity", earthOpacity.toFixed(4));
+    document.documentElement.style.setProperty("--mars-opacity", marsOpacity.toFixed(4));
+  }
+
   document.querySelectorAll("#revenue-calculator input").forEach(function (input) {
     input.addEventListener("input", updateCalculator);
   });
 
   updateCalculator();
+  updateJourney();
+  window.addEventListener("scroll", updateJourney, { passive: true });
+  window.addEventListener("resize", updateJourney);
 })();

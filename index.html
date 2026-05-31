@@ -11,6 +11,12 @@
     <link rel="stylesheet" href="./src/styles.css" />
   </head>
   <body>
+    <div class="cosmic-backdrop" aria-hidden="true">
+      <div class="cosmic-stars"></div>
+      <img class="cosmic-earth" src="./public/nasa/earth-blue-marble-2012.jpg" alt="" />
+      <img class="cosmic-mars" src="./public/nasa/mars-global-coverage.jpg" alt="" />
+      <div class="cosmic-route"></div>
+    </div>
     <header class="site-header" aria-label="Navegacion principal">
       <a class="brand-link" href="#inicio" aria-label="BMB Digital Labs">
         <span class="brand-mark" aria-hidden="true">
@@ -101,6 +107,21 @@
             <p>Cuidamos marca, documentos, tono visual y confianza para que cada producto tenga una imagen propia y defendible.</p>
             <b aria-hidden="true"></b>
           </article>
+        </div>
+      </section>
+
+      <section class="journey-section" aria-labelledby="journey-title">
+        <div class="journey-copy">
+          <p class="eyebrow">De Tierra a Marte</p>
+          <h2 id="journey-title">Una empresa como viaje: despegar, operar, aterrizar.</h2>
+          <p>
+            La web se mueve como una ruta de mision. Al bajar, la Tierra queda atras, aparecen conexiones, campos y estaciones de trabajo, y el destino se vuelve rojo: una forma visual de explicar que BMB transforma ideas en sistemas operativos.
+          </p>
+        </div>
+        <div class="journey-telemetry" aria-label="Telemetria visual">
+          <article><span>Origen</span><strong>Tierra</strong></article>
+          <article><span>Trayectoria</span><strong>Red modular</strong></article>
+          <article><span>Destino</span><strong>Marte</strong></article>
         </div>
       </section>
 
@@ -299,6 +320,7 @@
 
     <footer class="site-footer">
       <span>BMB Digital Labs</span>
+      <small>Imagery: NASA / GSFC / JPL. No endorsement implied.</small>
       <a href="#inicio">Volver arriba</a>
     </footer>
 

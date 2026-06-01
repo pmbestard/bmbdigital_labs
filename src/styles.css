@@ -779,7 +779,9 @@ section {
   gap: 28px;
   align-items: stretch;
   background:
-    linear-gradient(135deg, rgba(21, 24, 29, 0.94) 0%, rgba(41, 47, 53, 0.88) 56%, rgba(243, 244, 243, 0.54) 56%, rgba(243, 244, 243, 0.42) 100%);
+    radial-gradient(circle at 82% 16%, rgba(255, 106, 0, 0.16), transparent 32%),
+    radial-gradient(circle at 16% 82%, rgba(29, 124, 255, 0.1), transparent 30%),
+    linear-gradient(135deg, rgba(21, 24, 29, 0.92), rgba(21, 24, 29, 0.64));
   backdrop-filter: blur(12px);
 }
 
@@ -1664,7 +1666,9 @@ section {
 
   .founder-section,
   .method-section {
-    background: #15181d;
+    background:
+      radial-gradient(circle at 82% 16%, rgba(255, 106, 0, 0.16), transparent 32%),
+      linear-gradient(135deg, rgba(21, 24, 29, 0.94), rgba(21, 24, 29, 0.72));
   }
 
   .service-grid,

@@ -604,10 +604,18 @@ section {
 }
 
 .intro-band {
+  color: #f7f7f4;
   background:
-    linear-gradient(180deg, rgba(255, 255, 255, 0.24), rgba(243, 244, 243, 0.16)),
-    rgba(255, 255, 255, 0.02);
-  backdrop-filter: blur(4px) saturate(1.02);
+    radial-gradient(circle at 12% 10%, rgba(29, 124, 255, 0.14), transparent 30%),
+    radial-gradient(circle at 82% 18%, rgba(255, 106, 0, 0.13), transparent 30%),
+    linear-gradient(180deg, rgba(21, 24, 29, 0.62), rgba(21, 24, 29, 0.42)),
+    rgba(21, 24, 29, 0.18);
+  backdrop-filter: blur(6px) saturate(1.08);
+}
+
+.intro-band .section-heading p:not(.eyebrow) {
+  color: #edf1f3;
+  text-shadow: 0 1px 18px rgba(0, 0, 0, 0.34);
 }
 
 .billing-section {
@@ -657,13 +665,16 @@ section {
 .platform-grid article,
 .integrity-list article,
 .cv-panel {
-  border: 1px solid rgba(215, 220, 226, 0.42);
+  border: 1px solid rgba(247, 247, 244, 0.22);
   border-radius: 8px;
   background:
-    linear-gradient(135deg, rgba(255, 255, 255, 0.46), rgba(255, 255, 255, 0.2)),
-    rgba(255, 255, 255, 0.1);
-  box-shadow: 0 16px 42px rgba(21, 24, 29, 0.12);
-  backdrop-filter: blur(10px) saturate(1.04);
+    linear-gradient(135deg, rgba(247, 247, 244, 0.12), rgba(247, 247, 244, 0.035)),
+    rgba(21, 24, 29, 0.38);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(12px) saturate(1.14);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background 220ms ease;
 }
 
 .principle-grid article,
@@ -684,6 +695,20 @@ section {
   overflow: hidden;
 }
 
+.principle-grid article:hover,
+.integrity-list article:hover,
+.cv-panel:hover {
+  border-color: rgba(255, 106, 0, 0.5);
+  background:
+    linear-gradient(135deg, rgba(247, 247, 244, 0.15), rgba(247, 247, 244, 0.045)),
+    rgba(21, 24, 29, 0.48);
+  box-shadow:
+    0 24px 62px rgba(0, 0, 0, 0.32),
+    0 0 36px rgba(255, 106, 0, 0.13),
+    inset 0 1px 0 rgba(255, 255, 255, 0.14);
+  transform: translateY(-4px);
+}
+
 .principle-grid article i,
 .integrity-list article i {
   position: absolute;
@@ -694,8 +719,19 @@ section {
   border: 1px solid rgba(255, 106, 0, 0.26);
   clip-path: polygon(25% 4%, 75% 4%, 100% 50%, 75% 96%, 25% 96%, 0 50%);
   background:
-    linear-gradient(135deg, rgba(255, 106, 0, 0.08), transparent 62%),
-    rgba(231, 233, 232, 0.28);
+    linear-gradient(135deg, rgba(255, 106, 0, 0.18), transparent 62%),
+    rgba(247, 247, 244, 0.08);
+  transition: opacity 220ms ease, transform 220ms ease, border-color 220ms ease, background 220ms ease;
+}
+
+.principle-grid article:hover i,
+.integrity-list article:hover i {
+  border-color: rgba(255, 106, 0, 0.48);
+  background:
+    linear-gradient(135deg, rgba(255, 106, 0, 0.28), transparent 62%),
+    rgba(247, 247, 244, 0.12);
+  opacity: 0.9;
+  transform: translate(-4px, 4px) rotate(4deg);
 }
 
 .principle-grid article b,
@@ -732,7 +768,7 @@ section {
 .founder-copy p,
 .cv-panel dd,
 .cv-note {
-  color: var(--muted);
+  color: #dfe5e8;
   line-height: 1.65;
 }
 
@@ -1391,6 +1427,30 @@ section {
   box-shadow:
     0 18px 50px rgba(0, 0, 0, 0.24),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background 220ms ease;
+}
+
+.service-panel,
+.contact-form,
+.contact-note,
+.legal-grid article {
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background 220ms ease;
+}
+
+.service-grid article:hover,
+.service-panel:hover,
+.contact-form:hover,
+.contact-note:hover,
+.legal-grid article:hover {
+  border-color: rgba(255, 106, 0, 0.5);
+  background:
+    linear-gradient(135deg, rgba(21, 24, 29, 0.64), rgba(21, 24, 29, 0.38)),
+    rgba(255, 106, 0, 0.045);
+  box-shadow:
+    0 24px 62px rgba(0, 0, 0, 0.32),
+    0 0 34px rgba(255, 106, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
 }
 
 .service-grid span {
@@ -1768,5 +1828,17 @@ section {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
+  }
+
+  .principle-grid article:hover,
+  .platform-section .platform-grid article:hover,
+  .integrity-list article:hover,
+  .cv-panel:hover,
+  .service-grid article:hover,
+  .service-panel:hover,
+  .contact-form:hover,
+  .contact-note:hover,
+  .legal-grid article:hover {
+    transform: none;
   }
 }

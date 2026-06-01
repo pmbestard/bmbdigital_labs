@@ -575,6 +575,7 @@ section {
 
 .intro-band,
 .platform-section,
+.services-section,
 .billing-section,
 .integrity-section,
 .contact-section,
@@ -584,6 +585,7 @@ section {
 
 .intro-band::before,
 .platform-section::before,
+.services-section::before,
 .billing-section::before,
 .integrity-section::before,
 .contact-section::before,
@@ -627,6 +629,16 @@ section {
   backdrop-filter: blur(4px) saturate(1.05);
 }
 
+.services-section {
+  color: #f7f7f4;
+  background:
+    radial-gradient(circle at 16% 28%, rgba(29, 124, 255, 0.12), transparent 30%),
+    radial-gradient(circle at 80% 66%, rgba(255, 106, 0, 0.14), transparent 28%),
+    linear-gradient(180deg, rgba(21, 24, 29, 0.68), rgba(21, 24, 29, 0.5)),
+    rgba(21, 24, 29, 0.18);
+  backdrop-filter: blur(5px) saturate(1.06);
+}
+
 .contact-section {
   color: #f7f7f4;
   background:
@@ -652,6 +664,12 @@ section {
 
 .billing-section .section-heading p:not(.eyebrow) {
   color: #d8dddf;
+}
+
+.services-section .section-heading p:not(.eyebrow) {
+  max-width: 860px;
+  color: #d8dddf;
+  line-height: 1.65;
 }
 
 .principle-grid,
@@ -1321,6 +1339,14 @@ section {
   background: var(--signal);
 }
 
+.platform-grid .status-pill {
+  margin-bottom: 16px;
+  border: 1px solid rgba(255, 106, 0, 0.42);
+  color: #f7f7f4;
+  background: rgba(255, 106, 0, 0.18);
+  box-shadow: 0 0 22px rgba(255, 106, 0, 0.1);
+}
+
 .showcase-panel h3,
 .project-board h3 {
   color: var(--signal);
@@ -1461,10 +1487,80 @@ section {
   margin-bottom: 12px;
 }
 
+.offer-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.offer-grid article {
+  min-height: 248px;
+  padding: 22px;
+  border: 1px solid rgba(215, 220, 226, 0.24);
+  border-top: 3px solid var(--signal);
+  border-radius: 8px;
+  background:
+    linear-gradient(135deg, rgba(21, 24, 29, 0.56), rgba(21, 24, 29, 0.34)),
+    rgba(255, 255, 255, 0.045);
+  box-shadow:
+    0 18px 50px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(9px) saturate(1.08);
+  transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background 220ms ease;
+  will-change: transform;
+}
+
+.offer-grid article:hover {
+  border-color: rgba(255, 106, 0, 0.52);
+  background:
+    linear-gradient(135deg, rgba(21, 24, 29, 0.66), rgba(21, 24, 29, 0.4)),
+    rgba(255, 106, 0, 0.05);
+  box-shadow:
+    0 24px 62px rgba(0, 0, 0, 0.32),
+    0 0 34px rgba(255, 106, 0, 0.12),
+    inset 0 1px 0 rgba(255, 255, 255, 0.12);
+  transform: translateY(-4px);
+}
+
+.offer-grid span {
+  display: inline-flex;
+  margin-bottom: 18px;
+  color: var(--signal);
+  font-family: var(--font-mission);
+  font-size: 12px;
+  font-weight: 950;
+}
+
+.offer-grid h3 {
+  color: #f7f7f4;
+}
+
+.offer-grid p {
+  color: #d8dddf;
+  line-height: 1.65;
+}
+
 .integrity-list {
   display: grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
   gap: 16px;
+}
+
+.security-note {
+  max-width: 960px;
+  margin: 22px 0 0;
+  padding: 18px 20px;
+  border: 1px solid rgba(255, 106, 0, 0.28);
+  border-left: 3px solid var(--signal);
+  border-radius: 8px;
+  color: #f7f7f4;
+  line-height: 1.6;
+  background:
+    linear-gradient(135deg, rgba(21, 24, 29, 0.62), rgba(21, 24, 29, 0.36)),
+    rgba(255, 106, 0, 0.045);
+  box-shadow:
+    0 18px 48px rgba(0, 0, 0, 0.24),
+    inset 0 1px 0 rgba(255, 255, 255, 0.08);
 }
 
 .contact-layout {
@@ -1542,10 +1638,25 @@ section {
   accent-color: var(--signal);
 }
 
+.privacy-check a {
+  color: #ffffff;
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
 .contact-mask {
   margin: -2px 0 0;
   color: #aeb4b8;
   font-size: 12px;
+  line-height: 1.45;
+}
+
+.form-status {
+  min-height: 18px;
+  margin: -4px 0 0;
+  color: #f7f7f4;
+  font-size: 12px;
+  font-weight: 850;
   line-height: 1.45;
 }
 
@@ -1652,6 +1763,7 @@ section {
 
   .principle-grid,
   .platform-grid,
+  .offer-grid,
   .integrity-list,
   .service-layout,
   .contact-layout,
@@ -1672,6 +1784,7 @@ section {
   }
 
   .service-grid,
+  .offer-grid,
   .legal-grid {
     grid-template-columns: 1fr;
   }
@@ -1840,6 +1953,7 @@ section {
   .platform-section .platform-grid article:hover,
   .integrity-list article:hover,
   .cv-panel:hover,
+  .offer-grid article:hover,
   .service-grid article:hover,
   .service-panel:hover,
   .contact-form:hover,

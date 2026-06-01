@@ -489,6 +489,7 @@
   function initContactMask() {
     var form = document.querySelector(".contact-form");
     if (!form) return;
+    var status = form.querySelector(".form-status");
 
     function readMailPart(value) {
       if (form.dataset.mailEncoding === "b64" && window.atob) {
@@ -514,6 +515,10 @@
         "",
         "Privacidad: consentimiento marcado para responder a esta consulta."
       ].join("\n");
+
+      if (status) {
+        status.textContent = "Se abrirá tu correo para enviar la consulta preparada.";
+      }
 
       window.location.href = "mailto:" + target
         + "?subject=" + encodeURIComponent(subject)

@@ -1000,6 +1000,22 @@ section {
   opacity: 1;
 }
 
+.project-link {
+  position: relative;
+  z-index: 2;
+  display: inline-flex;
+  width: fit-content;
+  margin-top: 18px;
+  color: var(--signal);
+  font-weight: 950;
+  text-decoration: none;
+}
+
+.project-link:hover {
+  text-decoration: underline;
+  text-underline-offset: 5px;
+}
+
 .platform-section .section-heading {
   width: fit-content;
   max-width: 100%;

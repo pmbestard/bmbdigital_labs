@@ -3,18 +3,21 @@
 Proyecto: Web corporativa BMB Digital Labs  
 Dominio: bmbdigitallabs.com  
 Fecha: 31/05/2026  
-Estado: Publicada en GitHub Pages, pendiente de estabilizar HTTPS definitivo
+Estado: Publicada en GitHub Pages y actualizada con enfoque de privacidad, oficina portable y personalización visual
 
 ## 1. Objetivo del proyecto
 
-Crear una primera presencia corporativa para BMB Digital Labs como empresa raíz, separada de productos concretos como Tu Gestor de Alquileres.
+Crear una primera presencia corporativa para BMB Digital Labs como empresa raíz, separada de productos concretos como Tu Gestor de Alquileres, pero capaz de mostrar la dirección real de la marca.
 
 La web debía comunicar:
 
 - Identidad de marca.
-- Visión empresarial.
-- Proyectos propios.
-- Servicio personalizado.
+- Visión empresarial centrada en privacidad práctica.
+- Oficinas virtuales y herramientas local-first.
+- Archivos cifrados y portabilidad de datos.
+- Trabajo desde cualquier ordenador con internet.
+- Proyectos propios y demostraciones iniciales.
+- Personalización visual mediante colores favoritos del cliente.
 - Principios morales: autonomía, soberanía, independencia, privacidad y seguridad.
 - Contacto y mínimos legales.
 - Base futura para una oficina documental privada.
@@ -29,16 +32,18 @@ La web debía comunicar:
 - Fondo narrativo tipo misión Tierra/Marte.
 - Secciones:
   - Visión.
-  - Método.
-  - Perfil fundador.
+  - Funcionamiento.
   - Proyectos.
-  - Empresa raíz.
-  - Principios morales.
+  - Enfoque.
+  - Principios.
   - Contacto.
   - Legal.
 - Footer con derechos reservados y créditos NASA.
 - Formulario de contacto mediante correo.
 - Ajustes responsive para móvil.
+- Enlace interno a la vista pública de bienvenida de Tu Gestor de Alquileres.
+- Mejora visual de tarjetas tipo cristal oscuro, contraste y movimiento ligero al pasar el ratón.
+- Textos revisados con acentos y preparados para traducción automática.
 
 ### Infraestructura
 
@@ -58,7 +63,7 @@ La web debía comunicar:
 - Creación de carpeta privada local `private-office/` excluida de Git.
 - Preparación de panel `/admin/` con bóveda cifrada local `.bmbvault`.
 - Exportación/importación de datos cifrados para USB.
-- Respaldo opcional por email mediante adjunto cifrado.
+- Respaldo opcional por correo mediante adjunto cifrado.
 
 ## 3. Valor aportado
 
@@ -68,8 +73,10 @@ La web no es solo una página de presentación. Es la primera pieza operativa de
 - Presenta capacidad creativa y técnica.
 - Ordena discurso comercial.
 - Separa marca empresarial de productos concretos.
-- Introduce principios de privacidad y soberanía.
+- Introduce principios de privacidad, soberanía y mínimo servidor.
 - Crea base para controlar documentos, propuestas y costes.
+- Presenta un enfoque diferencial frente a webs genéricas: herramientas privadas, portables y personalizadas.
+- Permite explicar la empresa en web y en papel mediante documentos internos actualizados.
 
 ## 4. Estimación de esfuerzo
 
@@ -83,8 +90,9 @@ La web no es solo una página de presentación. Es la primera pieza operativa de
 | GitHub Pages, DNS y publicación | 3 h | 45 € | 135 € |
 | Oficina privada y bóveda cifrada inicial | 8 h | 45 € | 360 € |
 | Revisión seguridad anti-phishing | 2 h | 45 € | 90 € |
+| Reenfoque de privacidad, textos y dossier papel | 4 h | 45 € | 180 € |
 
-Subtotal estimado: 2.295 €
+Subtotal estimado actualizado: 2.475 €
 
 ## 5. Costes externos pendientes de registrar
 
@@ -100,11 +108,13 @@ Subtotal estimado: 2.295 €
 - Definir correos oficiales: `contacto@`, `legal@`, `dmarc@`.
 - No almacenar documentación sensible en GitHub Pages.
 - Evolucionar `/admin/` hacia autenticación real si se gestionan datos sensibles online.
+- Completar aviso legal, política de privacidad y política de cookies antes de actividad comercial plena.
+- Preparar condiciones de servicio y límites profesionales: BMB crea herramientas de apoyo, no sustituye asesoría legal, fiscal o contable.
 
 ## 7. Conclusión
 
 Valor interno recomendado para registrar como desarrollo inicial de activo digital:
 
-**2.295 € + IVA simbólico si se emite factura proforma interna.**
+**2.475 € + IVA simbólico si se emite factura proforma interna.**
 
 Este importe sirve como referencia de coste de creación, no como factura fiscal real hasta que exista emisor legal con datos fiscales completos.

@@ -1,46 +1,78 @@
-# Fase 0 - Empresa, cobros e integridad
+# Fase 0 - Empresa, privacidad, cobros e integridad
 
 ## Objetivo
 
-Preparar la base empresarial y tecnica para cobrar a usuarios de forma ordenada, emitir facturas, calcular impuestos, exportar informes para gestoría y demostrar la integridad de los registros.
+Preparar la base empresarial y técnica para presentar BMB Digital Labs como estudio independiente de herramientas digitales privadas, oficinas virtuales y productos local-first.
+
+La prioridad es poder trabajar con datos propios, archivos cifrados, exportaciones claras y servidor mínimo, sin descuidar una futura estructura de cobros, facturación e integridad de registros.
 
 ## Bloques de trabajo
 
-1. Constitucion y alta
-   - Forma juridica prevista: SL, pendiente de validar con asesoría.
-   - Alta censal mediante modelo 036 antes de iniciar actividad.
-   - Definir epigrafe, obligaciones de IVA, Impuesto sobre Sociedades y retenciones.
-   - Revisar Seguridad Social para administrador, socios y posibles trabajadores.
+1. Constitución y alta
+   - Forma jurídica inicial pendiente de validar con asesoría.
+   - Alta censal antes de iniciar actividad económica.
+   - Definir epígrafe o epígrafes IAE para diseño web, desarrollo de herramientas digitales y servicios online.
+   - Revisar obligaciones de IVA, IRPF, retenciones y modelos periódicos.
+   - Revisar alta en RETA y posibles escenarios futuros de sociedad limitada.
 
-2. Cobros
+2. Oferta inicial
+   - Oficinas virtuales privadas.
+   - Herramientas local-first.
+   - Bóvedas JSON cifradas.
+   - Webs personalizadas por colores e identidad del cliente.
+   - Paneles documentales y pequeños gestores internos.
+   - Prototipos funcionales de productos propios.
+
+3. Privacidad y soberanía
+   - Datos bajo control del usuario.
+   - Exportaciones comprensibles.
+   - Archivos portables.
+   - Cifrado antes de guardar o respaldar cuando el proyecto lo requiera.
+   - Limpieza de sesión y reducción de datos en navegador.
+   - Servidor solo para funciones con valor claro: publicación, sincronización opcional, respaldo cifrado, cobro o acceso multiusuario.
+
+4. Cobros
    - Clientes.
-   - Planes y precios.
-   - Suscripciones mensuales y anuales.
+   - Servicios puntuales.
+   - Mantenimiento mensual.
+   - Licencias o suscripciones opcionales.
    - Pasarela de pago.
    - Facturas, abonos, reembolsos e impagos.
-   - Conciliacion entre factura, cobro, banco y comision de pasarela.
+   - Conciliación entre factura, cobro, banco y comisión de pasarela.
 
-3. Fiscalidad
+5. Fiscalidad
    - IVA nacional.
    - Operaciones B2B/B2C.
-   - Validacion de NIF/VIES si se vende a empresas de la UE.
-   - OSS si vendemos servicios digitales a consumidores finales de otros Estados miembros.
+   - Validación de NIF/VIES si se vende a empresas de la UE.
+   - OSS si se venden servicios digitales a consumidores finales de otros Estados miembros.
    - Informes trimestrales y anuales para gestoría.
 
-4. Integridad
-   - Libro de eventos criticos.
-   - Hash encadenado.
-   - Exportacion firmada de informes.
-   - Registro de cambios sobre facturas y suscripciones.
-   - Evidencia de no manipulacion.
+6. Integridad
+   - Libro de eventos críticos.
+   - Hash encadenado cuando el proyecto lo requiera.
+   - Exportación firmada de informes.
+   - Registro de cambios sobre documentos, facturas o suscripciones.
+   - Evidencia de no manipulación.
 
-5. Confianza del cliente
-   - Terminos y condiciones.
-   - Politica de privacidad.
-   - Cookies.
-   - RGPD: acceso, rectificacion, exportacion y borrado.
-   - Explicaciones claras durante cada exportacion o envio de datos.
+7. Confianza del cliente
+   - Aviso legal.
+   - Política de privacidad.
+   - Política de cookies.
+   - Condiciones de servicio.
+   - Explicación clara de qué datos se guardan, dónde y para qué.
+   - Nota visible: las herramientas no sustituyen asesoramiento legal, fiscal o contable profesional.
 
 ## Primer entregable
 
-Una web de presentacion que explique la vision, el fundador, el sistema de cobros y el compromiso de integridad antes de vender el producto.
+Una web de presentación que explique:
+
+- qué es BMB Digital Labs;
+- qué problema resuelve;
+- qué se puede contratar o probar hoy;
+- cómo se protege la privacidad;
+- qué proyectos existen;
+- cómo contactar.
+
+## Segundo entregable
+
+Un dossier imprimible de presentación para asesoría, PAE, posibles clientes o colaboradores.

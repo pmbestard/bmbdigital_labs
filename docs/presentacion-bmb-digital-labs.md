@@ -1,6 +1,6 @@
-# Presentacion de negocio - BMB Digital Labs
+# Presentación de negocio - BMB Digital Labs
 
-## Nombre comercial provisional
+## Nombre comercial
 
 BMB Digital Labs
 
@@ -8,103 +8,139 @@ BMB Digital Labs
 
 Build. Manage. Brand.
 
-## Significado
+## Idea central
 
-- Build: construimos plataformas, webs y productos digitales.
-- Manage: ordenamos negocio, cobros, fiscalidad, datos e integridad.
-- Brand: cuidamos diseño, presencia, documentos y experiencia.
+BMB Digital Labs crea oficinas virtuales, herramientas privadas y webs personalizadas para personas que quieren construir proyectos propios sin perder control sobre sus datos.
 
-## Descripcion corta
+La empresa se enfoca en productos digitales de privacidad práctica: trabajar desde cualquier ordenador con acceso a internet, abrir archivos propios o bóvedas cifradas, operar en el navegador, exportar la información y cerrar sesión sin depender de una base de datos central obligatoria.
 
-BMB Digital Labs es un estudio de producto digital que diseña, desarrolla y explota proyectos propios, combinando diseño web, automatizacion, plataformas SaaS, gestion documental, cobros online y marca digital.
+## Significado del lema
 
-## Actividad inicial
+- Build: construir herramientas, webs, interfaces y productos digitales útiles.
+- Manage: ordenar datos, documentos, procesos, exportaciones e informes.
+- Brand: convertir identidad, colores favoritos y presencia visual en una marca clara, legible y profesional.
 
-El negocio empieza como actividad profesional/autonoma orientada a:
+## Descripción corta
 
-- Diseño y desarrollo de paginas web.
-- Creacion de productos digitales propios.
-- Diseño de interfaces y experiencia de usuario.
-- Automatizacion de procesos para pequeños negocios.
-- Mantenimiento y mejora de plataformas web.
-- Preparacion futura de sistemas de suscripcion, cobro, facturacion e informes.
+BMB Digital Labs es un estudio independiente de producto digital privado. Diseña y desarrolla oficinas virtuales, herramientas local-first, archivos JSON cifrados, webs personalizadas y experiencias digitales orientadas a autonomía, privacidad, portabilidad y uso real.
 
-## Proyectos previstos
+## Cliente ideal
 
-1. Tu Gestor de Alquileres
-   - Plataforma para propietarios y gestion patrimonial.
-   - Recibos, fianzas, contratos, documentos e informes.
-   - Enfoque local-first y control del usuario.
+BMB Digital Labs se dirige a personas y pequeños proyectos con iniciativa, criterio digital y ganas de construir algo propio:
 
-2. Galeria de arte digital
-   - Plataforma para mostrar y vender obra digital.
-   - Experiencia visual premium.
-   - Posible certificacion, catalogo, pagos y ediciones limitadas.
+- emprendedores que quieren empezar con orden;
+- profesionales que manejan documentos o datos sensibles;
+- pequeños negocios que necesitan herramientas privadas;
+- creadores que quieren una identidad visual personal;
+- usuarios que valoran privacidad, exportación y control sobre su información.
 
-3. Webs y presencia digital para clientes
-   - Webs corporativas.
-   - Landing pages.
-   - Identidad visual aplicada.
-   - Documentos comerciales y experiencia de marca.
+## Posicionamiento comercial
 
-4. Sistema interno de cobros e integridad
-   - Suscripciones.
-   - Facturas.
-   - Informes fiscales.
-   - Conciliacion de pagos.
-   - Registro de eventos e integridad.
+La web o herramienta no debe apropiarse de los datos del cliente. Debe ayudarle a trabajar mejor, guardar mejor y marcharse con su información bajo control.
 
-## Como explicarlo a la asesoria o PAE
+Frase base:
 
-Quiero darme de alta como autonomo para iniciar una actividad digital bajo el nombre comercial BMB Digital Labs.
+> Tu web puede nacer de tus colores favoritos, pero debe terminar siendo una herramienta clara, legible y profesional.
 
-La actividad principal sera el diseño y desarrollo de webs, plataformas digitales y productos propios. Al inicio prestare servicios de diseño/desarrollo web y mantenimiento digital, y en paralelo preparare productos online propios que podran monetizarse mediante suscripciones, pagos digitales o venta de servicios digitales.
+## Líneas principales
+
+### 1. Oficina virtual soberana
+
+Herramientas que funcionan desde el navegador y permiten abrir, editar, guardar y exportar archivos propios. El usuario conserva su información y puede trabajar desde cualquier equipo con internet, siempre que tenga su archivo y sus credenciales.
+
+### 2. Bóvedas JSON cifradas
+
+Archivos portables para documentos, servicios, registros, informes o pequeños sistemas internos. La prioridad es que el dato pueda viajar con el usuario y no quede atrapado en una plataforma cerrada.
+
+### 3. Gestores privados por sector
+
+Productos concretos para necesidades reales, empezando por gestión privada de alquileres, documentos, inventarios, presupuestos o pequeños negocios.
+
+### 4. Identidad visual personalizada
+
+Webs y herramientas adaptadas a los colores favoritos del cliente, siempre revisando contraste, legibilidad, coherencia visual y aspecto profesional.
+
+### 5. Integridad y respaldo
+
+Exportaciones claras, copias cifradas, historial de cambios, hashes o firmas cuando el proyecto lo requiera.
+
+## Proyecto destacado
+
+### Tu Gestor de Alquileres
+
+Vista pública de bienvenida:
+
+`https://bmbdigitallabs.com/proyectos/gestor-alquileres/`
+
+Objetivo:
+
+- gestión documental de alquileres;
+- recibos, fianzas, contratos, anexos e informes;
+- enfoque local-first;
+- archivos bajo control del usuario;
+- servidor mínimo y funciones online solo cuando aporten valor claro.
+
+Estado: prelanzamiento / demostración visual inicial.
+
+## Cómo explicarlo a un cliente
+
+BMB Digital Labs crea herramientas digitales privadas para que puedas trabajar con tus datos desde cualquier ordenador con internet, sin entregar tu archivo maestro a una nube cerrada. Abrimos el archivo, trabajamos, exportamos, cerramos sesión y el control vuelve al usuario.
+
+Además, si el proyecto necesita presencia pública, la web puede diseñarse desde los colores favoritos del cliente y convertirse en una identidad visual seria, clara y profesional.
+
+## Cómo explicarlo a una asesoría o PAE
+
+Quiero iniciar una actividad digital bajo el nombre comercial BMB Digital Labs.
+
+La actividad principal será el diseño y desarrollo de webs, herramientas digitales privadas, oficinas virtuales, interfaces, documentación digital y productos propios orientados a privacidad, portabilidad de datos y automatización ligera.
+
+Al inicio se podrán prestar servicios de diseño/desarrollo web, creación de herramientas a medida, personalización visual, documentación y prototipos funcionales. En paralelo, se desarrollarán productos propios que podrán monetizarse en el futuro mediante servicios digitales, licencias, mantenimiento, suscripciones opcionales o desarrollos personalizados.
 
 Necesito que me indiquen:
 
-- Epigrafe o epigrafes IAE mas adecuados.
-- Si conviene actividad profesional, empresarial o combinada.
-- Obligaciones de IVA e IRPF.
-- Modelos trimestrales y anuales que tendre que presentar.
-- Alta en RETA y base/cuota aplicable.
-- Si necesito retenciones en facturas a empresas o profesionales.
-- Como declarar ventas online, suscripciones o servicios digitales.
-- En que momento convendria pasar de autonomo a sociedad limitada.
+- epígrafe o epígrafes IAE más adecuados;
+- si conviene actividad profesional, empresarial o combinada;
+- obligaciones de IVA e IRPF;
+- modelos trimestrales y anuales;
+- alta en RETA y cuota aplicable;
+- si debo aplicar retención en facturas;
+- cómo declarar servicios digitales, mantenimiento o suscripciones;
+- cuándo tendría sentido pasar de autónomo a sociedad limitada.
 
 ## Preguntas concretas para llevar
 
-1. Que epigrafe IAE corresponde a diseño web, desarrollo de plataformas digitales y servicios online?
-2. Puedo usar el nombre comercial BMB Digital Labs aunque el alta sea como persona fisica?
-3. Como debo facturar servicios de desarrollo web a empresas espanolas?
-4. Como debo facturar suscripciones digitales a particulares en Espana?
-5. Que pasa si vendo servicios digitales a clientes de la Union Europea?
-6. Debo aplicar retencion de IRPF en mis facturas?
-7. Que gastos puedo deducir: dominios, hosting, software, equipos, internet, diseno, publicidad?
-8. Que modelos debo presentar cada trimestre?
-9. Que documentacion debo guardar para justificar ingresos, gastos y cobros por pasarela?
-10. Cuando seria recomendable constituir una SL?
+1. ¿Qué epígrafe IAE corresponde a diseño web, desarrollo de herramientas digitales y productos online?
+2. ¿Puedo usar el nombre comercial BMB Digital Labs aunque el alta sea como persona física?
+3. ¿Cómo debo facturar servicios de desarrollo web o herramientas a medida a empresas españolas?
+4. ¿Cómo debo facturar productos digitales o servicios online a particulares en España?
+5. ¿Qué ocurre si vendo servicios digitales a clientes de la Unión Europea?
+6. ¿Debo aplicar retención de IRPF en mis facturas?
+7. ¿Qué gastos puedo deducir: dominios, hosting, software, equipos, internet, diseño, publicidad?
+8. ¿Qué modelos debo presentar cada trimestre?
+9. ¿Qué documentación debo guardar para justificar ingresos, gastos y cobros por pasarela?
+10. ¿Cuándo sería recomendable constituir una sociedad limitada?
 
-## Documentacion que conviene preparar
+## Límites importantes
+
+BMB Digital Labs crea herramientas digitales de apoyo. No sustituye asesoramiento legal, fiscal, contable ni administrativo profesional.
+
+Cuando una herramienta genere documentos, informes o plantillas con efectos legales, fiscales o administrativos, deberán ser revisados por un profesional competente.
+
+## Documentación que conviene preparar
 
 - DNI/NIE.
 - Certificado digital o Cl@ve.
-- Numero de Seguridad Social.
+- Número de Seguridad Social.
 - Cuenta bancaria.
 - Domicilio fiscal.
-- Descripcion de actividad.
+- Descripción de actividad.
 - Nombre comercial previsto: BMB Digital Labs.
 - Lista de servicios iniciales.
-- Prevision aproximada de ingresos y gastos.
+- Previsión aproximada de ingresos y gastos.
 - Dominios comprados.
-- Repositorio o web provisional, si se quiere mostrar concepto.
-
-## Notas importantes
-
-- La declaracion censal de alta debe presentarse antes de iniciar la actividad economica.
-- El alta en autonomos se tramita ante Seguridad Social y la persona trabajadora autonoma es responsable de solicitarla.
-- El nombre legal completo debe reservarse para documentos oficiales, contratos, facturas y tramites administrativos.
-- La web publica debe presentar la marca comercial y la actividad, no datos personales innecesarios.
+- Web provisional o dossier de presentación.
+- Repositorio o capturas si se quiere mostrar trabajo realizado.
 
 ## Frase de posicionamiento
 
-BMB Digital Labs crea negocios digitales completos: producto, gestion y marca, con una vision practica orientada a lanzar plataformas utiles, visualmente cuidadas y fiscalmente ordenadas desde el principio.
+BMB Digital Labs crea herramientas digitales privadas, oficinas virtuales y webs personalizadas para emprendedores y pequeños proyectos que quieren trabajar desde cualquier lugar sin perder el control de sus datos, su identidad ni su criterio.

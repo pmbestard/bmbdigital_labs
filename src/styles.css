@@ -1420,7 +1420,7 @@ section {
 .service-grid article {
   min-height: 154px;
   padding: 22px;
-  border-color: rgba(255, 106, 0, 0.28);
+  border: 1px solid rgba(255, 106, 0, 0.24);
   background:
     linear-gradient(135deg, rgba(21, 24, 29, 0.54), rgba(21, 24, 29, 0.32)),
     rgba(255, 255, 255, 0.04);
@@ -1428,6 +1428,7 @@ section {
     0 18px 50px rgba(0, 0, 0, 0.24),
     inset 0 1px 0 rgba(255, 255, 255, 0.08);
   transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background 220ms ease;
+  will-change: transform;
 }
 
 .service-panel,
@@ -1435,6 +1436,7 @@ section {
 .contact-note,
 .legal-grid article {
   transition: border-color 220ms ease, box-shadow 220ms ease, transform 220ms ease, background 220ms ease;
+  will-change: transform;
 }
 
 .service-grid article:hover,

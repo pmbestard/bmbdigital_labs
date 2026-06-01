@@ -506,7 +506,7 @@
       var subject = "Consulta BMB Digital Labs - " + (data.get("tipo-proyecto") || "Proyecto");
       var body = [
         "Nombre: " + (data.get("nombre") || ""),
-        "Email: " + (data.get("email") || ""),
+        "Correo electrónico: " + (data.get("email") || ""),
         "Tipo de proyecto: " + (data.get("tipo-proyecto") || ""),
         "",
         "Mensaje:",

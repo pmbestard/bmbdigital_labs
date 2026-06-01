@@ -194,7 +194,7 @@
       "Importante:\n" +
       "- No incluir documentos en claro.\n" +
       "- No escribir la frase de paso en este correo.\n" +
-      "- Guardar tambien una copia offline en USB.\n"
+      "- Guardar también una copia offline en USB.\n"
     );
     window.location.href = "mailto:" + encodeURIComponent(target) + "?subject=" + subject + "&body=" + body;
   }

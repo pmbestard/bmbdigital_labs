@@ -490,6 +490,7 @@
     var form = document.querySelector(".contact-form");
     if (!form) return;
     var status = form.querySelector(".form-status");
+    var isEnglish = document.documentElement.lang.toLowerCase().indexOf("en") === 0;
 
     function readMailPart(value) {
       if (form.dataset.mailEncoding === "b64" && window.atob) {
@@ -504,20 +505,35 @@
 
       var data = new FormData(form);
       var target = readMailPart(form.dataset.mailUser) + "@" + readMailPart(form.dataset.mailHost);
-      var subject = "Consulta BMB Digital Labs - " + (data.get("tipo-proyecto") || "Proyecto");
-      var body = [
-        "Nombre: " + (data.get("nombre") || ""),
-        "Correo electrónico: " + (data.get("email") || ""),
-        "Tipo de proyecto: " + (data.get("tipo-proyecto") || ""),
-        "",
-        "Mensaje:",
-        data.get("mensaje") || "",
-        "",
-        "Privacidad: consentimiento marcado para responder a esta consulta."
-      ].join("\n");
+      var subject = isEnglish
+        ? "BMB Digital Labs query - " + (data.get("tipo-proyecto") || "Project")
+        : "Consulta BMB Digital Labs - " + (data.get("tipo-proyecto") || "Proyecto");
+      var body = isEnglish
+        ? [
+          "Name: " + (data.get("nombre") || ""),
+          "Email: " + (data.get("email") || ""),
+          "Project type: " + (data.get("tipo-proyecto") || ""),
+          "",
+          "Message:",
+          data.get("mensaje") || "",
+          "",
+          "Privacy: consent marked to respond to this query."
+        ].join("\n")
+        : [
+          "Nombre: " + (data.get("nombre") || ""),
+          "Correo electrónico: " + (data.get("email") || ""),
+          "Tipo de proyecto: " + (data.get("tipo-proyecto") || ""),
+          "",
+          "Mensaje:",
+          data.get("mensaje") || "",
+          "",
+          "Privacidad: consentimiento marcado para responder a esta consulta."
+        ].join("\n");
 
       if (status) {
-        status.textContent = "Se abrirá tu correo para enviar la consulta preparada.";
+        status.textContent = isEnglish
+          ? "Your email client will open with the prepared query."
+          : "Se abrirá tu correo para enviar la consulta preparada.";
       }
 
       window.location.href = "mailto:" + target

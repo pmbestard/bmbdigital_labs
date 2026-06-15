@@ -8,6 +8,7 @@
 
 :root {
   color-scheme: light;
+  --announcement-height: 38px;
   --font-body: Inter, "Segoe UI", Arial, sans-serif;
   --font-mission: "BMB Mission", Inter, "Segoe UI", Arial, sans-serif;
   --ink: #171a1f;
@@ -57,6 +58,55 @@ a:focus-visible,
 button:focus-visible {
   outline: 3px solid rgba(255, 106, 0, 0.48);
   outline-offset: 4px;
+}
+
+.site-announcement {
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+  z-index: 30;
+  height: var(--announcement-height);
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  color: #ffffff;
+  border-bottom: 1px solid rgba(255, 106, 0, 0.34);
+  background:
+    linear-gradient(90deg, rgba(255, 106, 0, 0.24), rgba(29, 124, 255, 0.16), rgba(255, 106, 0, 0.18)),
+    rgba(21, 24, 29, 0.94);
+  backdrop-filter: blur(14px);
+}
+
+.announcement-track {
+  display: inline-flex;
+  align-items: center;
+  gap: 42px;
+  width: max-content;
+  min-width: 100%;
+  padding-left: 100%;
+  animation: announcement-marquee 34s linear infinite;
+  white-space: nowrap;
+}
+
+.announcement-track span {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  color: #f7f7f4;
+  font-family: var(--font-mission);
+  font-size: 12px;
+  font-weight: 900;
+}
+
+.announcement-track span::before {
+  content: "";
+  width: 7px;
+  height: 7px;
+  margin-right: 10px;
+  border-radius: 50%;
+  background: var(--signal);
+  box-shadow: 0 0 16px rgba(255, 106, 0, 0.7);
 }
 
 .cosmic-backdrop {
@@ -170,7 +220,7 @@ button:focus-visible {
 
 .site-header {
   position: fixed;
-  top: 0;
+  top: var(--announcement-height);
   right: 0;
   left: 0;
   z-index: 20;
@@ -1998,6 +2048,19 @@ section {
 }
 
 @media (max-width: 620px) {
+  :root {
+    --announcement-height: 42px;
+  }
+
+  .announcement-track {
+    gap: 30px;
+    animation-duration: 30s;
+  }
+
+  .announcement-track span {
+    font-size: 11px;
+  }
+
   .hero {
     min-height: 860px;
   }
@@ -2149,6 +2212,16 @@ section {
   }
 }
 
+@keyframes announcement-marquee {
+  0% {
+    transform: translateX(0);
+  }
+
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
 @media (prefers-reduced-motion: reduce) {
   *,
   *::before,
@@ -2156,6 +2229,17 @@ section {
     animation-duration: 0.001ms !important;
     animation-iteration-count: 1 !important;
     scroll-behavior: auto !important;
+  }
+
+  .announcement-track {
+    width: 100%;
+    padding: 0 16px;
+    animation: none !important;
+    white-space: normal;
+  }
+
+  .announcement-track span:not(:first-child) {
+    display: none;
   }
 
   .principle-grid article:hover,

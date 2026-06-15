@@ -3,11 +3,16 @@
 - [ ] Completar NIF.
 - [ ] Completar domicilio profesional/fiscal.
 - [ ] Confirmar proveedor de hosting.
-- [ ] Confirmar proveedor de formulario.
+- [ ] Confirmar proveedor de formulario solo si se decide reactivar un formulario.
+- [ ] Confirmar si el formulario debe seguir retirado o si se activara con proveedor documentado.
 - [ ] Confirmar si hay cookies no técnicas.
 - [ ] Confirmar correo legal.
 - [ ] Confirmar correo privacidad.
 - [ ] Confirmar correo de seguridad.
+- [ ] Confirmar contacto@bmbdigitallabs.com.
+- [ ] Confirmar privacidad@bmbdigitallabs.com.
+- [ ] Confirmar legal@bmbdigitallabs.com.
+- [ ] Confirmar seguridad@bmbdigitallabs.com.
 - [ ] Confirmar nombre legal completo del titular.
 - [ ] Confirmar si el dominio canónico definitivo será `https://www.bmbdigitallabs.com`.
 - [ ] Confirmar si el hosting aplica `_headers`; si no, configurar cabeceras en el proveedor real.
@@ -15,7 +20,8 @@
 - [ ] Revisar traducción legal inglesa con asesoría profesional si se usa para público internacional.
 - [ ] Verificar que no se promete seguridad absoluta.
 - [ ] Verificar que no se promete cifrado extremo a extremo si no existe.
-- [ ] Probar formulario.
+- [ ] Probar formulario solo si se reactiva; actualmente debe seguir retirado.
+- [ ] No reactivar formulario hasta confirmar buzon corporativo o proveedor externo.
 - [ ] Probar responsive.
 - [ ] Probar build.
 - [ ] Revisar footer.

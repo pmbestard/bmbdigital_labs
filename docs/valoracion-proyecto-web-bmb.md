@@ -47,7 +47,7 @@ La web debía comunicar:
 
 ### Infraestructura
 
-- Repositorio GitHub: `pmbestard/bmbdigital_labs`.
+- Repositorio GitHub: repositorio remoto del proyecto BMB Digital Labs.
 - Publicación con GitHub Pages.
 - Dominio personalizado `bmbdigitallabs.com`.
 - Configuración DNS en Arsys hacia GitHub Pages.

@@ -9,11 +9,11 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 - `/aviso-legal/`, `/privacidad/`, `/cookies/`, `/terminos/` y `/seguridad/` existen como rutas HTML estáticas.
 - La versión inglesa dispone de rutas legales equivalentes: `/en/legal-notice/`, `/en/privacy/`, `/en/cookies/`, `/en/terms/` y `/en/security/`.
 - La landing ES, landing EN, página pública de proyecto y páginas legales enlazan el bloque legal completo desde el footer.
-- La landing EN enlaza a páginas legales en inglés desde la primera capa del formulario, el checkbox de privacidad y el footer.
-- El formulario principal incluye primera capa informativa, campos requeridos, email de tipo `email`, honeypot, checkbox obligatorio de privacidad y botón deshabilitado hasta aceptación.
+- La landing EN enlaza a páginas legales en inglés desde el panel informativo de contacto y el footer.
+- El formulario público se ha retirado por modo prelanzamiento y porque el envío `mailto:` podía fallar según navegador, dispositivo o cliente de correo.
 - No se detectan promesas afirmativas de seguridad absoluta, invulnerabilidad, anonimato total ni cifrado extremo a extremo. Las menciones a esos términos aparecen como negaciones o cautelas legales.
-- Proveedor de hosting público detectado: GitHub Pages. El formulario usa `mailto:` mediante cliente de correo de la persona usuaria.
-- Los marcadores `TODO_` se han retirado de las páginas públicas para evitar apariencia de incumplimiento o publicación a medias; quedan solo como tareas internas/documentales.
+- Proveedor de hosting público detectado: GitHub Pages. No hay proveedor externo de formularios ni envío directo de consultas desde la web pública principal.
+- Los marcadores `TODO_` se habían retirado de las páginas públicas; en modo prelanzamiento se reintroduce expresamente `TODO_EMAIL_CORPORATIVO` para no inventar buzones corporativos no confirmados.
 - No se detectan scripts de tracking no declarados. Los scripts cargados en la web pública son propios (`src/main.js`) y JSON-LD de schema.org.
 - No hay build de framework: el sitio compila como estático. Se verificó sintaxis de `src/main.js`, parseo de `manifest.webmanifest`, parseo de `sitemap.xml`, enlaces relativos y `git diff --check`.
 - El diseño mantiene identidad BMB Digital Labs: logo, paleta grafito/naranja, estética espacial, tipografía de misión, NASA credits y lenguaje premium prudente.
@@ -46,9 +46,9 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 
 ## Formularios existentes
 
-- Formulario de contacto en `index.html`.
-- Formulario equivalente en `en/index.html`.
-- El formulario prepara un correo con `mailto:` usando datos de email codificados en atributos `data-*`.
+- No hay formulario de contacto activo en `index.html`.
+- No hay formulario de contacto activo en `en/index.html`.
+- Se ha retirado el flujo `mailto:` que dependía del cliente de correo del usuario.
 - No se detecta envío directo a Formspree, EmailJS, Resend, Supabase, Firebase u otro proveedor de formularios.
 
 ## Cookies y scripts detectados
@@ -56,21 +56,22 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 - No se detecta `document.cookie`.
 - No se detectan Google Analytics, gtag, Meta Pixel, Hotjar, Plausible, Umami, YouTube embeds ni Google Maps en la web principal.
 - Se detecta `localStorage` en `private-office/office.js`, fuera de la landing pública principal.
-- JavaScript propio usa canvas, eventos de ratón/táctiles y preparación de correo.
+- JavaScript propio usa canvas y eventos de ratón/táctiles. La preparación de correo queda sin superficie activa al retirar los formularios públicos.
 
 ## Proveedores técnicos detectados
 
 - Dominio público: `www.bmbdigitallabs.com`.
 - Hosting: GitHub Pages.
-- Formulario: `mailto:` mediante cliente de correo del usuario; si se cambia a servicio externo, actualizar política de privacidad y cookies.
+- Formulario: retirado. Si se activa un proveedor externo o un nuevo `mailto:`, actualizar política de privacidad, cookies y proveedores.
+- Correos corporativos previstos: contacto@bmbdigitallabs.com, privacidad@bmbdigitallabs.com, legal@bmbdigitallabs.com y seguridad@bmbdigitallabs.com. Pendiente confirmar buzones; mientras tanto la web usa `TODO_EMAIL_CORPORATIVO`.
 - Analítica/publicidad: ninguno detectado.
 - Imágenes: NASA / GSFC / JPL.
 
 ## Riesgos legales y comerciales encontrados
 
 - Faltaban rutas legales separadas para aviso legal, privacidad, cookies, términos y seguridad. Quedan creadas y enlazadas desde el footer de la landing y la página pública de proyecto.
-- Faltaban NIF, domicilio profesional/fiscal y correos legales definitivos.
-- El formulario tenía consentimiento básico, pero faltaba primera capa completa y botón bloqueado hasta aceptación.
+- Faltaban NIF, domicilio profesional/fiscal y correos corporativos definitivos.
+- El formulario anterior dependía de `mailto:` y se retira durante el modo prelanzamiento.
 - El footer no enlazaba páginas legales completas.
 - SEO técnico incompleto: faltaban canonical, Open Graph, Twitter Card, manifest, robots y sitemap. Quedan añadidos para la web principal.
 - Cabeceras de seguridad no configuradas en el repositorio. Se añade `_headers` para despliegues compatibles, pendiente de confirmar proveedor.
@@ -82,11 +83,11 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 3. `/cookies/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/cookies/`.
 4. `/terminos/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/terms/`.
 5. `/seguridad/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/security/`.
-6. Formulario: primera capa informativa presente.
-7. Checkbox de privacidad: obligatorio y bloquea envío hasta aceptación.
+6. Formulario: retirado durante el modo prelanzamiento; no hay recogida directa de consultas desde la web pública.
+7. Checkbox de privacidad: no aplica mientras no exista formulario activo.
 8. Seguridad absoluta: no se promete; solo se menciona para negarla.
 9. Cifrado extremo a extremo: no se promete; se indica que no debe afirmarse salvo implementación documentada.
-10. Proveedores técnicos: identificados cuando existen o marcados como `TODO`.
+10. Proveedores técnicos: identificados cuando existen o marcados como `TODO`; correos corporativos pendientes como `TODO_EMAIL_CORPORATIVO`.
 11. Tracking: no se detectan scripts de tracking no declarados.
 12. Compilación: sitio estático sin pipeline; validaciones técnicas superadas.
 13. Diseño: mantiene BMB Digital Labs.
@@ -101,8 +102,9 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 ## Cambios recomendados
 
 - Completar los datos fiscales reales antes de captación comercial seria, contratación, facturación o prestación continuada.
+- Confirmar buzones corporativos antes de sustituir `TODO_EMAIL_CORPORATIVO`.
 - Confirmar proveedor de hosting real.
 - Revisar textos legales con asesoría profesional antes de contratación formal.
 - Revisar también la versión inglesa con asesoría profesional si se va a captar público internacional.
-- Probar formulario en móvil y escritorio.
+- No reactivar formulario hasta confirmar buzón corporativo o proveedor externo documentado.
 - Si se activa analítica, píxeles, mapas, vídeos o formularios externos, añadir consentimiento y actualizar la tabla de cookies.

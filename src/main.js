@@ -487,7 +487,7 @@
   }
 
   function initContactMask() {
-    var form = document.querySelector(".contact-form");
+    var form = document.querySelector("form.contact-form");
     if (!form) return;
     var status = form.querySelector(".form-status");
     var consent = form.querySelector('input[name="privacidad"]');

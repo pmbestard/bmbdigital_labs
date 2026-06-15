@@ -21,8 +21,8 @@
 
 ## Proveedores
 
-- Hosting: `TODO_PROVEEDOR_HOSTING`.
-- Formulario: actualmente `mailto:` mediante cliente de correo del usuario; completar `TODO_PROVEEDOR_FORMULARIO` si se sustituye por un proveedor externo.
+- Hosting: GitHub Pages.
+- Formulario: actualmente `mailto:` mediante cliente de correo del usuario; actualizar documentación si se sustituye por un proveedor externo.
 - Analítica/publicidad: ninguno detectado.
 
 ## Conservación
@@ -46,11 +46,9 @@
 
 ## Campos pendientes
 
-- `TODO_NOMBRE_LEGAL_COMPLETO`
-- `TODO_NIF`
-- `TODO_DOMICILIO_PROFESIONAL`
-- `TODO_LEGAL_EMAIL`
-- `TODO_PRIVACIDAD_EMAIL`
-- `TODO_SEGURIDAD_EMAIL`
-- `TODO_PROVEEDOR_HOSTING`
-- `TODO_PROVEEDOR_FORMULARIO`
+- Nombre legal completo para contratación formal.
+- NIF para contratación/facturación.
+- Domicilio profesional/fiscal para contratación/facturación.
+- Correo legal definitivo.
+- Correo de privacidad definitivo.
+- Correo de seguridad definitivo.

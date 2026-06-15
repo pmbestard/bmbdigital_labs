@@ -10,7 +10,8 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 - La landing ES, landing EN, página pública de proyecto y páginas legales enlazan el bloque legal completo desde el footer.
 - El formulario principal incluye primera capa informativa, campos requeridos, email de tipo `email`, honeypot, checkbox obligatorio de privacidad y botón deshabilitado hasta aceptación.
 - No se detectan promesas afirmativas de seguridad absoluta, invulnerabilidad, anonimato total ni cifrado extremo a extremo. Las menciones a esos términos aparecen como negaciones o cautelas legales.
-- Proveedores técnicos no confirmados quedan marcados como `TODO_PROVEEDOR_HOSTING` y `TODO_PROVEEDOR_FORMULARIO`.
+- Proveedor de hosting público detectado: GitHub Pages. El formulario usa `mailto:` mediante cliente de correo de la persona usuaria.
+- Los marcadores `TODO_` se han retirado de las páginas públicas para evitar apariencia de incumplimiento o publicación a medias; quedan solo como tareas internas/documentales.
 - No se detectan scripts de tracking no declarados. Los scripts cargados en la web pública son propios (`src/main.js`) y JSON-LD de schema.org.
 - No hay build de framework: el sitio compila como estático. Se verificó sintaxis de `src/main.js`, parseo de `manifest.webmanifest`, parseo de `sitemap.xml`, enlaces relativos y `git diff --check`.
 - El diseño mantiene identidad BMB Digital Labs: logo, paleta grafito/naranja, estética espacial, tipografía de misión, NASA credits y lenguaje premium prudente.
@@ -53,8 +54,8 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 ## Proveedores técnicos detectados
 
 - Dominio público: `www.bmbdigitallabs.com`.
-- Hosting: pendiente de confirmar (`TODO_PROVEEDOR_HOSTING`).
-- Formulario: `mailto:` mediante cliente de correo del usuario; si se cambia a servicio externo, completar `TODO_PROVEEDOR_FORMULARIO`.
+- Hosting: GitHub Pages.
+- Formulario: `mailto:` mediante cliente de correo del usuario; si se cambia a servicio externo, actualizar política de privacidad y cookies.
 - Analítica/publicidad: ninguno detectado.
 - Imágenes: NASA / GSFC / JPL.
 
@@ -92,7 +93,7 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 
 ## Cambios recomendados
 
-- Completar todos los campos `TODO_` antes de captación comercial seria.
+- Completar los datos fiscales reales antes de captación comercial seria, contratación, facturación o prestación continuada.
 - Confirmar proveedor de hosting real.
 - Revisar textos legales con asesoría profesional antes de contratación formal.
 - Probar formulario en móvil y escritorio.

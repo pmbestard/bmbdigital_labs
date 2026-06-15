@@ -1160,11 +1160,72 @@ section {
   position: relative;
   z-index: 2;
   display: inline-flex;
+  align-items: center;
+  gap: 10px;
   width: fit-content;
   margin-top: 18px;
   color: var(--signal);
   font-weight: 950;
   text-decoration: none;
+}
+
+.soundcloud-link {
+  min-height: 32px;
+}
+
+.platform-grid .soundcloud-card {
+  grid-column: span 2;
+}
+
+.soundcloud-card h3 {
+  max-width: 640px;
+}
+
+.soundcloud-link span:last-child {
+  white-space: nowrap;
+}
+
+.soundcloud-logo {
+  position: relative;
+  display: inline-block;
+  flex: 0 0 auto;
+  width: 38px;
+  height: 24px;
+  overflow: hidden;
+  border-radius: 6px;
+  background: linear-gradient(180deg, #ff8a00 0%, #ff5500 100%);
+  box-shadow:
+    0 0 0 1px rgba(255, 255, 255, 0.16),
+    0 0 18px rgba(255, 85, 0, 0.28);
+}
+
+.soundcloud-logo::before {
+  content: "";
+  position: absolute;
+  right: 5px;
+  bottom: 5px;
+  width: 18px;
+  height: 10px;
+  border-radius: 999px 999px 7px 7px;
+  background: #ffffff;
+  box-shadow:
+    -8px 2px 0 -3px #ffffff,
+    -3px -5px 0 -3px #ffffff;
+}
+
+.soundcloud-logo::after {
+  content: "";
+  position: absolute;
+  left: 6px;
+  bottom: 5px;
+  width: 2px;
+  height: 8px;
+  border-radius: 999px;
+  background: rgba(255, 255, 255, 0.95);
+  box-shadow:
+    4px -2px 0 rgba(255, 255, 255, 0.95),
+    8px -5px 0 rgba(255, 255, 255, 0.95),
+    12px -3px 0 rgba(255, 255, 255, 0.95);
 }
 
 .project-link:hover {
@@ -1300,7 +1361,7 @@ section {
 }
 
 .platform-grid {
-  grid-template-columns: repeat(4, minmax(0, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(230px, 1fr));
 }
 
 .platform-grid article {
@@ -2035,6 +2096,14 @@ section {
 
   .project-board {
     grid-template-columns: 1fr;
+  }
+
+  .platform-grid .soundcloud-card {
+    grid-column: auto;
+  }
+
+  .soundcloud-link span:last-child {
+    white-space: normal;
   }
 
   .cosmic-earth,

@@ -7,7 +7,9 @@ Fecha: 15 de junio de 2026.
 Resultado: apto como base técnica/editorial para teaser y presentación prudente, pendiente de completar datos legales reales y revisión jurídica.
 
 - `/aviso-legal/`, `/privacidad/`, `/cookies/`, `/terminos/` y `/seguridad/` existen como rutas HTML estáticas.
+- La versión inglesa dispone de rutas legales equivalentes: `/en/legal-notice/`, `/en/privacy/`, `/en/cookies/`, `/en/terms/` y `/en/security/`.
 - La landing ES, landing EN, página pública de proyecto y páginas legales enlazan el bloque legal completo desde el footer.
+- La landing EN enlaza a páginas legales en inglés desde la primera capa del formulario, el checkbox de privacidad y el footer.
 - El formulario principal incluye primera capa informativa, campos requeridos, email de tipo `email`, honeypot, checkbox obligatorio de privacidad y botón deshabilitado hasta aceptación.
 - No se detectan promesas afirmativas de seguridad absoluta, invulnerabilidad, anonimato total ni cifrado extremo a extremo. Las menciones a esos términos aparecen como negaciones o cautelas legales.
 - Proveedor de hosting público detectado: GitHub Pages. El formulario usa `mailto:` mediante cliente de correo de la persona usuaria.
@@ -32,6 +34,11 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 
 - `/`
 - `/en/`
+- `/en/legal-notice/`
+- `/en/privacy/`
+- `/en/cookies/`
+- `/en/terms/`
+- `/en/security/`
 - `/admin/`
 - `/private-office/`
 - `/proyectos/gestor-alquileres/`
@@ -70,11 +77,11 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 
 ## Resultado de comprobación solicitada
 
-1. `/aviso-legal/`: existe y está enlazado en footers públicos.
-2. `/privacidad/`: existe y está enlazado en footers públicos.
-3. `/cookies/`: existe y está enlazado en footers públicos.
-4. `/terminos/`: existe y está enlazado en footers públicos.
-5. `/seguridad/`: existe y está enlazado en footers públicos.
+1. `/aviso-legal/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/legal-notice/`.
+2. `/privacidad/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/privacy/`.
+3. `/cookies/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/cookies/`.
+4. `/terminos/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/terms/`.
+5. `/seguridad/`: existe y está enlazado en footers públicos. Equivalente EN: `/en/security/`.
 6. Formulario: primera capa informativa presente.
 7. Checkbox de privacidad: obligatorio y bloquea envío hasta aceptación.
 8. Seguridad absoluta: no se promete; solo se menciona para negarla.
@@ -96,5 +103,6 @@ Resultado: apto como base técnica/editorial para teaser y presentación prudent
 - Completar los datos fiscales reales antes de captación comercial seria, contratación, facturación o prestación continuada.
 - Confirmar proveedor de hosting real.
 - Revisar textos legales con asesoría profesional antes de contratación formal.
+- Revisar también la versión inglesa con asesoría profesional si se va a captar público internacional.
 - Probar formulario en móvil y escritorio.
 - Si se activa analítica, píxeles, mapas, vídeos o formularios externos, añadir consentimiento y actualizar la tabla de cookies.

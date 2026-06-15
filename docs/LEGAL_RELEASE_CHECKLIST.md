@@ -12,6 +12,7 @@
 - [ ] Confirmar si el dominio canónico definitivo será `https://www.bmbdigitallabs.com`.
 - [ ] Confirmar si el hosting aplica `_headers`; si no, configurar cabeceras en el proveedor real.
 - [ ] Revisar textos legales con asesoría profesional.
+- [ ] Revisar traducción legal inglesa con asesoría profesional si se usa para público internacional.
 - [ ] Verificar que no se promete seguridad absoluta.
 - [ ] Verificar que no se promete cifrado extremo a extremo si no existe.
 - [ ] Probar formulario.

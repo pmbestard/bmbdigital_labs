@@ -85,7 +85,8 @@ button:focus-visible {
   width: max-content;
   min-width: 100%;
   padding-left: 100%;
-  animation: announcement-marquee 34s linear infinite;
+  padding-right: 100vw;
+  animation: announcement-marquee 56s linear infinite;
   white-space: nowrap;
 }
 
@@ -2054,7 +2055,7 @@ section {
 
   .announcement-track {
     gap: 30px;
-    animation-duration: 30s;
+    animation-duration: 52s;
   }
 
   .announcement-track span {
@@ -2217,6 +2218,7 @@ section {
     transform: translateX(0);
   }
 
+  90%,
   100% {
     transform: translateX(-100%);
   }

@@ -1,0 +1,24 @@
+# Legal release checklist
+
+- [ ] Completar NIF.
+- [ ] Completar domicilio profesional/fiscal.
+- [ ] Confirmar proveedor de hosting.
+- [ ] Confirmar proveedor de formulario.
+- [ ] Confirmar si hay cookies no técnicas.
+- [ ] Confirmar correo legal.
+- [ ] Confirmar correo privacidad.
+- [ ] Confirmar correo de seguridad.
+- [ ] Confirmar nombre legal completo del titular.
+- [ ] Confirmar si el dominio canónico definitivo será `https://www.bmbdigitallabs.com`.
+- [ ] Confirmar si el hosting aplica `_headers`; si no, configurar cabeceras en el proveedor real.
+- [ ] Revisar textos legales con asesoría profesional.
+- [ ] Verificar que no se promete seguridad absoluta.
+- [ ] Verificar que no se promete cifrado extremo a extremo si no existe.
+- [ ] Probar formulario.
+- [ ] Probar responsive.
+- [ ] Probar build.
+- [ ] Revisar footer.
+- [ ] Revisar sitemap.
+- [ ] Revisar robots.txt.
+- [ ] Revisar que `/admin/` y `/private-office/` no se publiquen como zonas abiertas si contienen trabajo interno.
+- [ ] Definir política de conservación real para consultas recibidas por email.

@@ -490,6 +490,9 @@
     var form = document.querySelector(".contact-form");
     if (!form) return;
     var status = form.querySelector(".form-status");
+    var consent = form.querySelector('input[name="privacidad"]');
+    var submit = form.querySelector('button[type="submit"]');
+    var honeypot = form.querySelector('input[name="empresa_web"]');
     var isEnglish = document.documentElement.lang.toLowerCase().indexOf("en") === 0;
 
     function readMailPart(value) {
@@ -499,8 +502,26 @@
       return value || "";
     }
 
+    function syncSubmitState() {
+      if (!submit || !consent) return;
+      submit.disabled = !consent.checked;
+    }
+
+    syncSubmitState();
+    if (consent) {
+      consent.addEventListener("change", syncSubmitState);
+    }
+
     form.addEventListener("submit", function (event) {
       event.preventDefault();
+      if (honeypot && honeypot.value) {
+        if (status) {
+          status.textContent = isEnglish
+            ? "The query could not be prepared."
+            : "No se ha podido preparar la consulta.";
+        }
+        return;
+      }
       if (!form.reportValidity()) return;
 
       var data = new FormData(form);
@@ -517,7 +538,7 @@
           "Message:",
           data.get("mensaje") || "",
           "",
-          "Privacy: consent marked to respond to this query."
+          "Privacy: consent marked. Policy accepted: https://www.bmbdigitallabs.com/privacidad/"
         ].join("\n")
         : [
           "Nombre: " + (data.get("nombre") || ""),
@@ -527,7 +548,7 @@
           "Mensaje:",
           data.get("mensaje") || "",
           "",
-          "Privacidad: consentimiento marcado para responder a esta consulta."
+          "Privacidad: consentimiento marcado. Politica aceptada: https://www.bmbdigitallabs.com/privacidad/"
         ].join("\n");
 
       if (status) {

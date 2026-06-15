@@ -1,0 +1,16 @@
+{
+  "name": "BMB Digital Labs",
+  "short_name": "BMB",
+  "description": "Privacidad operativa y productos digitales.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#15181d",
+  "theme_color": "#ff6a00",
+  "icons": [
+    {
+      "src": "/public/brand/bmb-logo-seal.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    }
+  ]
+}
